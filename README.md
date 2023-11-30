@@ -1,12 +1,6 @@
 # VSD-HDP
 > A repository containing a detailed documentation of my progress in the [VSD-HDP](https://www.vlsisystemdesign.com/hdp/) program
 
-* Program quick links:
-     1. [PROJECT](https://github.com/Visruat/Visruat-VSD-HDP/tree/main/PROJECT)
-     2. [netlists](https://github.com/Visruat/Visruat-VSD-HDP/tree/main/netlists)
-     3. [PVT_Reports](https://github.com/Visruat/Visruat-VSD-HDP/tree/main/timing_reps)
-     4. [Useful Scripts](https://github.com/Visruat/Visruat-VSD-HDP/tree/main/PROJECT/useful%20scripts)
-
 * VSD-HDP Status Quick links:
      1. [DAY 0](#day-0)
      2. [DAY 1](#day-1)
