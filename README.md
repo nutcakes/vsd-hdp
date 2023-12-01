@@ -27,9 +27,48 @@
 
 ## DAY 0
 > Enviroment Prep Guide
+ <details>
+<summary> Yosys & OpenSta </summary>
 
-### Installation Guide
+Installation of OpenSource RTL synthesis tool - Yosys
+```bash
+$ apt install yosys
+```
+![yosys](https://github.com/nutc4k3/vsd-hdp/assets/25620946/b184573f-9d18-4f45-9beb-8b75ac438a1e)
 
+ 
+Installation of OpenSource gate level static timing verifier - OpenSta
+ ```bash
+sudo apt install cmake clang gcctcl swig bison flex
+git clone https://github.com/The-OpenROAD-Project/OpenSTA.git
+cd OpenSTA
+mkdir build
+cd build
+cmake ..
+make
+apt install opensta
+```
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/9a10a693-b5ba-4ae0-8fb5-ea41204b4305)
+
+</details>
+
+ <details>
+ <summary> ngspice </summary>
+
+Installation of OpenSource Spice (analog electronic circuit) simulator - NgSpice
+ ```bash
+wget https://sourceforge.net/projects/ngspice/files/ng-spice-rework/old-releases/37/ngspice-37.tar.gz/download -o ngspice-37.tar.gz
+tar -zxvf ngspice-37.tar.gz
+cd ngspice-37
+mkdir release
+cd release
+../configure  --with-x --with-readline=yes --disable-debug
+make
+sudo make install
+ ```
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/ac6a5e67-57df-4f20-bf7f-271b0b7df33e)
+
+</details>
 ## DAY 1
 > Tool Usage Warm Up
 
