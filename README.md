@@ -1,7 +1,7 @@
 # VSD-HDP
 > A repository containing a detailed documentation of my progress in the [VSD-HDP](https://www.vlsisystemdesign.com/hdp/) program
 
-* VSD-HDP Status Quick links:
+* VSD-HDP Status:
      1. [DAY 0](#day-0)
      2. [DAY 1](#day-1)
      3. [DAY 2](#day-2)
@@ -27,8 +27,8 @@
 
 ## DAY 0
 > Enviroment Prep Guide
- <details>
-<summary> Yosys & OpenSta </summary>
+<details>
+<summary> yosys </summary>
 
 Installation of OpenSource RTL synthesis tool - Yosys
 ```bash
@@ -36,7 +36,9 @@ $ apt install yosys
 ```
 ![yosys](https://github.com/nutc4k3/vsd-hdp/assets/25620946/b184573f-9d18-4f45-9beb-8b75ac438a1e)
 
- 
+</details>
+ <details>
+<summary> opensta </summary>
 Installation of OpenSource gate level static timing verifier - OpenSta
  ```bash
 sudo apt install cmake clang gcctcl swig bison flex
@@ -51,7 +53,6 @@ apt install opensta
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/9a10a693-b5ba-4ae0-8fb5-ea41204b4305)
 
 </details>
-
  <details>
  <summary> ngspice </summary>
 
@@ -69,6 +70,42 @@ sudo make install
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/ac6a5e67-57df-4f20-bf7f-271b0b7df33e)
 
 </details>
+ <details>
+ <summary> iverilog </summary>
+
+
+ Installation of OpenSource Icarus Verilog Compilation System - iverilog:
+  ```bash
+sudo apt install iverilog
+ ```
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/21a91871-c916-480d-9b18-aadc9665ddb2)
+
+</details>
+
+ <details>
+ <summary> gtkwave </summary>
+
+
+Installation of OpenSource Electronic waveform viewer - gtkwave:
+  ```bash
+sudo apt install gtkwave
+ ```
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/64f7d6ed-e4bb-4b45-9ab5-90e1fcc44d5f)
+
+</details>
+<details>
+ <summary> magic  </summary>
+
+
+ Installation of OpenSource VLSI Layout tool - magic:
+  ```bash
+sudo apt install m4 tcsh csh libx11-dev libx11-dev tcl-dev tk-dev libcairo2-dev mesa-common-dev libglu1-mesa-dev libncurses-dev magic
+ ```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/ae34f23e-0e8a-46cc-ae66-186437e8479f)
+
+</details>
+
 ## DAY 1
 > Tool Usage Warm Up
 
