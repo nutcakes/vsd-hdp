@@ -107,9 +107,102 @@ sudo apt install m4 tcsh csh libx11-dev libx11-dev tcl-dev tk-dev libcairo2-dev 
 </details>
 
 ## DAY 1
-> Tool Usage Warm Up
+> Introduction to Verilog RTL Design and Synthesis
+
+<details>
+ <summary> 1# Introduction to iverilog design test bench </summary>
+
+
+
+</details>	
+<details>
+ <summary> 2# Labs using iverilog and gtkwave </summary>
+
+
+
+</details>
+<details>
+ <summary> 3# Introduction to Yosys and Logic synthesis </summary>
+
+
+
+</details>
+<details>
+ <summary> 4# Labs using Yosys and Sky130 PDKs </summary>
+
+
+
+</details>
 
 ## DAY 2
+> Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
 
-  
-  
+<details>
+ <summary> 1# Introduction to timing .libs </summary>
+
+
+
+</details>
+<details>
+ <summary> 2# Hierarchical vs Flat Synthesis </summary>
+
+
+
+</details>
+<details>
+ <summary> 3# Various Flop Coding Styles and optimization </summary>
+
+
+
+</details>
+
+## DAY 3
+> Combinational and sequential optmizations
+
+<details>
+ <summary> 1# Introduction to optimizations </summary>
+
+
+
+</details>
+<details>
+ <summary> 2# Combinational logic optimizations </summary>
+
+
+
+</details>
+<details>
+ <summary> 3# Sequential logic optimizations </summary>
+
+
+
+</details>
+<details>
+ <summary> 4# Sequential optimzations for unused outputs </summary>
+
+
+
+</details>
+
+## DAY 4
+> GLS, blocking vs non-blocking and Synthesis-Simulation mismatch
+
+<details>
+ <summary> 1# GLS, Synthesis-Simulation mismatch and Blocking/Non-blocking statements </summary>
+
+
+
+</details>
+<details>
+ <summary> 2# Labs on GLS and Synthesis-Simulation Mismatch </summary>
+
+
+
+</details>
+<details>
+ <summary> 3# Labs on synth-sim mismatch for blocking statement </summary>
+
+
+
+</details>
+
