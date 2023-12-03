@@ -110,9 +110,12 @@ sudo apt install m4 tcsh csh libx11-dev libx11-dev tcl-dev tk-dev libcairo2-dev 
 > Introduction to Verilog RTL Design and Synthesis
 
 <details>
- <summary> 1# Introduction to iverilog design test bench </summary>
+ <summary> 1# Introduction to simulator, design and test bench </summary>
 
-
+- Simulator
+- Design
+- Test Bench
+- Simulation Flow
 
 </details>	
 <details>
