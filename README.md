@@ -112,10 +112,17 @@ sudo apt install m4 tcsh csh libx11-dev libx11-dev tcl-dev tk-dev libcairo2-dev 
 <details>
  <summary> 1# Introduction to simulator, design and test bench </summary>
 
-- Simulator
-- Design
-- Test Bench
-- Simulation Flow
+- Simulator is a tool for checking the design. The RTL design is a implementation of a spec. The intent of the spec needs to be verified by simulating the design. The tool used for this is iverilog.
+- Design is the verilog code (or codes/files) which has the intended functionality to meet with the required spec.
+- Test Bench is the setup to ensure the above situation happens by appling a stimulus (test_vector) to the design and checking its functionality.
+- Simulation looks for changes on the input signals by evaluating the output. If there is no change in the input, evaluation does not happen.
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/9f057684-677d-4a0a-bbf7-0270b9054e78)
+
+In iverilog, the simulation flow looks like this:
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/060988a9-028e-4167-a6bc-08ea1830d416)
+
 
 </details>	
 <details>
