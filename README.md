@@ -179,7 +179,18 @@ Logic Synthesis comes to resolve the problem of translating RTL code to Digital 
 .lib is a collection of all standard cells or logical modules available, like the basic logical modules AND, OR, NOT, etc; as well as different flavors of these gates and their functionalities (slow, medium and fast versions/ 2, 3, 4 input versions).
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/7590b847-b4bc-4c69-8cbf-5330278aa863)
+DFFa = flip flop A
+DFFb = flip flop B
+COMBI = Combinational logic
+CLK = clock
+Tclk = Max speed
+Tcq_a = Propagation delay of DFFa
+Tcombi = Propagation delay of COMBI
+Tsetup_b = Setup time to reach the clock rate of DFFb
+fclk (max clk freq) = 1/Tclk (minimum clock period needed) ---> performance
 
+So, are faster cells needed? Yes, to increase performance until the required state, but we need slower cells to meet HOLD. The collection of these forms the .lib.
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/3b18a82a-2ca2-4f2e-ad35-1fd5264be81f)
 
 </details>
 <details>
