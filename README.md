@@ -192,6 +192,14 @@ fclk (max clk freq) = 1/Tclk (minimum clock period needed) ---> performance
 So, are faster cells needed? Yes, to increase performance until the required state, but we need slower cells to meet HOLD. The collection of these forms the .lib.
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/3b18a82a-2ca2-4f2e-ad35-1fd5264be81f)
 
+What we want is for DFFb capture whatever data was launched in the previous cycle from DFFa, not the one before. That is why we need HOLD. The interval between DFFa1 and DFFb1 should be greater than HOLD.
+
+LOAD in Digital Logic Circuit is the capacitance, less capacitance between two transistors A and B, lesser the cell delay. Wider transistors, low delay -> more power and area as well. 
+Constraints is the guidance offered to the synthetizer to select the best flavour of cells.
+Synthesis example:
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/fd0a8ccd-af47-49c4-b505-58a897daf023)
+
+
 </details>
 <details>
  <summary> 4# Labs using Yosys and Sky130 PDKs </summary>
