@@ -163,6 +163,22 @@ Files used:
 <details>
  <summary> 3# Introduction to Yosys and Logic synthesis </summary>
 
+Yosys is the synthetizer used for converting the RTL to netlist (represantation of the design in standard cells and .lib), as represented below:
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/d89f5468-cfa1-4fbb-ab34-56e1e5497a41)
+
+It is important to verify the synthesis as well by comparing both vcd files (RTL tb output and netlist tb output), as follows:
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/c19db8ef-9348-4b40-9740-fd637593b2f9)
+
+This means that the netlist and the RTL are simply two representations of the design. The netlist representing rhe design in terms of standard cells and the RTL in terms of behavior.
+
+Logic Synthesis comes to resolve the problem of translating RTL code to Digital Logic Circuit form (Gate level translation + connecyions between the gates) by giving out the netlist file.
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/122d1e02-068f-41f1-9787-6c525521b896)
+
+.lib is a collection of all standard cells or logical modules available, like the basic logical modules AND, OR, NOT, etc; as well as different flavors of these gates and their functionalities (slow, medium and fast versions/ 2, 3, 4 input versions).
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/7590b847-b4bc-4c69-8cbf-5330278aa863)
 
 
 </details>
