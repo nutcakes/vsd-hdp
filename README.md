@@ -1,4 +1,4 @@
-# VSD-HDP
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/23904abf-a40b-4e9f-8af4-20b854256d55)![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/4ef9002b-5689-41ca-ac4e-8c4d6a8189d3)# VSD-HDP
 > A repository containing a detailed documentation of my progress in the [VSD-HDP](https://www.vlsisystemdesign.com/hdp/) program
 
 * VSD-HDP Status:
@@ -204,7 +204,20 @@ Synthesis example:
 <details>
  <summary> 4# Labs using Yosys and Sky130 PDKs </summary>
 
+The following commands show how to use yosys:
+```bash
+yosys
+```
 
+Once inside yosys, read_liberty command can be used to read libraries:
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+The command to read the design is:
+```bash
+read_verilog good_mux.v
+```
 
 </details>
 
