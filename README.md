@@ -128,7 +128,36 @@ In iverilog, the simulation flow looks like this:
 <details>
  <summary> 2# Labs using iverilog and gtkwave </summary>
 
+Clone the below repo as it contains library and standard cells verilog modules (test_bench files, source files, lab files, etc)
 
+```bash
+git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+```
+
+1. Go to verilog_files folder, where the verilog files and its test_bench correspondence are located. To use it with iverilog, start by creating the output file (a.out):
+
+```bash
+iverilog good_mux.v tb_good_mux.v
+```
+
+2. Execute the a.out file to generate the VCD info as a .vcd file:
+
+```bash
+./a.out
+```
+
+3. View the VCD info in gtkwave:
+```bash
+gtkwave tb_good_mux.vcd
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/2b39b43a-4efe-4c29-b704-65f9990174c5)
+uut (unit under test)/drag and drop selecting the inputs to the signals window and zoom fit to view the waveforms. Find Next End arrows allows to jump between transitions.
+
+Files used:
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/83f385f9-0224-46ff-81b9-436f339ed689)
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/fa9fecfc-e0fa-4e2a-8fd2-88078d6d45b4)
 
 </details>
 <details>
