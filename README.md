@@ -228,7 +228,7 @@ To generate the netlist:
 ```bash
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
-To view the logic it realized write show inside yosys:
+To view the logic it realized in graphical form write show inside yosys:
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/08730852-683b-4c75-b953-f552f05880c4)
 
