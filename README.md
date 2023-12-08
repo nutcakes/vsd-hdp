@@ -264,7 +264,6 @@ The file multiple_modules.v:
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/b5cc739e-acf3-4bf3-b01c-3263e9eb739a)
 
 
-
 </details>
 <details>
  <summary> 3# Various Flop Coding Styles and optimization </summary>
