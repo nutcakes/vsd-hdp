@@ -219,6 +219,21 @@ The command to read the design is:
 read_verilog good_mux.v
 ```
 
+To synthesize the design we specify the module to use (good_mux):
+```bash
+synth -top good_mux
+```
+
+To generate the netlist:
+```bash
+abc -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/c23384b4-c897-4912-9ec4-3187f66572fc)
+
+To view the logic it realized write show inside yosys:
+
+
 </details>
 
 ## DAY 2
