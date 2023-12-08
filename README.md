@@ -249,12 +249,19 @@ write_verilog -noattr good_mux_netlist.v
 
 <details>
  <summary> 1# Introduction to timing .libs </summary>
-
-
+Process, Voltage and Temperature (PVT) variations are key points to note when designing silicon, by reading out the .lib and standard verilog codes one can find important information about cell delay, features, specifications and behavioral functionalities.
 
 </details>
 <details>
  <summary> 2# Hierarchical vs Flat Synthesis </summary>
+The file multiple_modules.v:
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/9c8f6cd7-ffe9-420d-964b-176913900ae7)
+
+
+...can be represented as:
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/b5cc739e-acf3-4bf3-b01c-3263e9eb739a)
 
 
 
