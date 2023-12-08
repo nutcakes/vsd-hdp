@@ -232,6 +232,15 @@ To view the logic it realized in graphical form write show inside yosys:
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/08730852-683b-4c75-b953-f552f05880c4)
 
+The commands to write the netlist are (the second simplify the netlist):
+```bash
+write_verilog good_mux_netlist.v
+write_verilog -noattr good_mux_netlist.v
+```
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/9d8e2452-b7de-406c-9010-16ebeeb4fa21)
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/2b2b4780-0de9-4726-a2af-6db2fd02e4f3)
+
 
 </details>
 
