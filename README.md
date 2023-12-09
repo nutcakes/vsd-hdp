@@ -1,4 +1,4 @@
-![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/759ebbb9-8cbd-4f64-be8a-6f76b9ef2387)# VSD-HDP
+# VSD-HDP
 > A repository containing a detailed documentation of my progress in the [VSD-HDP](https://www.vlsisystemdesign.com/hdp/) program
 
 * VSD-HDP Status:
