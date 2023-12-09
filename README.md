@@ -324,6 +324,11 @@ gtkwave tb_dff_asyncres.vcd
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/dd98a88e-4277-4a00-96ff-482f21c0aeb7)
 
+```bash
+iverilog dff_async_set.v tb_dff_async_set.v
+./a.out
+gtkwave tb_dff_async_set.vcd
+```
 
 </details>
 
