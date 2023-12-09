@@ -286,11 +286,17 @@ write_verilog -noattr multiple_modules_flat.v
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/f0761ab6-9e8f-4a83-815a-94c9d9bc5598)
 
-To make a submodule level synthesis go through yosys chain of command to read the design as common:
+The submodule synthesis (instead of top level as above) goes like this:
 
 ```bash
-read_liberty -lib 
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_modules.v
+synth -top sub_module1
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
 ```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/0f8213d9-4c0e-446d-9b4b-c24481d3f524)
 
 
 </details>
