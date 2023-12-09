@@ -303,6 +303,14 @@ show
 <details>
  <summary> 3# Various Flop Coding Styles and optimization </summary>
 
+The files used are as follows:
+```bash
+dff_asyncres_syncres.v
+dff_asyncres.v
+dff_async_set.v
+dff_syncres.v
+```
+Why flops? In a combinational circuit, the propagation delay can be seen as a glitch, to stabilise the signal, flops come handy as they work only at the edge of the clock. To initialize the flop, the control pins of the flop like reset or set can be either synchronous or asynchronous.
 
 
 </details>
