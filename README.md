@@ -340,6 +340,16 @@ gtkwave tb_dff_syncres.vcd
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/0e0b51bf-8470-42f0-987f-a0d5392e1bd8)
 
+Now for synthesis, invoke yosys.
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_asyncres.v
+synth -top dff_asyncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/171b8f53-ea62-4101-ac7a-d1e1b2c2e0e4)
 
 </details>
 
