@@ -330,6 +330,17 @@ iverilog dff_async_set.v tb_dff_async_set.v
 gtkwave tb_dff_async_set.vcd
 ```
 
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/8b23cc12-8eda-4b1f-99a5-184801d1e4b5)
+
+```bash
+iverilog dff_syncres.v tb_dff_syncres.v
+./a.out
+gtkwave tb_dff_syncres.vcd
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/0e0b51bf-8470-42f0-987f-a0d5392e1bd8)
+
+
 </details>
 
 ## DAY 3
