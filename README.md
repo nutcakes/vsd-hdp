@@ -1,4 +1,4 @@
-# VSD-HDP
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/759ebbb9-8cbd-4f64-be8a-6f76b9ef2387)# VSD-HDP
 > A repository containing a detailed documentation of my progress in the [VSD-HDP](https://www.vlsisystemdesign.com/hdp/) program
 
 * VSD-HDP Status:
@@ -310,7 +310,11 @@ dff_asyncres.v
 dff_async_set.v
 dff_syncres.v
 ```
-Why flops? In a combinational circuit, the propagation delay can be seen as a glitch, to stabilise the signal, flops come handy as they work only at the edge of the clock. To initialize the flop, the control pins of the flop like reset or set can be either synchronous or asynchronous.
+Why flops? In a combinational circuit, the propagation delay can be seen as a glitch, to stabilise the signal, flops come handy as they work only at the edge of the clock. To initialize the flop, the control pins of the flop, like reset or set, can be either synchronous (waits for clock) and/or asynchronous (irrespective of clock), sometimes causing race conditions. The two flavours are represented:
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/028bb802-66e8-4120-9f08-81831caf24c1)
+
+
 
 
 </details>
