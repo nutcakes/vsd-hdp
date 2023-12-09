@@ -270,12 +270,13 @@ The difference can be seen on yosys, after following the same chain of commands 
 ```bash
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show multiple_modules
-write_verilog multiple_modules_hier.v
+write_verilog -noattr multiple_modules_hier.v
 ```
 
 Here the hierarchies are preserved:
 
-![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/b7428aef-e742-49d5-8c54-b0193ac804a9)
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/08de784b-1b20-4a87-aeb8-f64af672aa5c)
+
 
 
 </details>
