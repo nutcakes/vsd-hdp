@@ -254,14 +254,19 @@ Process, Voltage and Temperature (PVT) variations are key points to note when de
 </details>
 <details>
  <summary> 2# Hierarchical vs Flat Synthesis </summary>
-The file multiple_modules.v:
+To explain Hierarchical vs Flat Synthesis the file of choice is multiple_modules.v:
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/9c8f6cd7-ffe9-420d-964b-176913900ae7)
 
 
-...can be represented as:
+...which can be represented as:
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/b5cc739e-acf3-4bf3-b01c-3263e9eb739a)
+
+The difference can be seen on yosys, after following the same chain of commands presented before, the command flatten and show stating the module will be used to flatten the hierarchical design and check the logical representation:
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/61258857-79ab-4d1c-a8ec-1107fa84f51d)
+
 
 
 </details>
