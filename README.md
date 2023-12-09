@@ -275,6 +275,8 @@ write_verilog multiple_modules_hier.v
 
 Here the hierarchies are preserved:
 
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/b7428aef-e742-49d5-8c54-b0193ac804a9)
+
 
 </details>
 <details>
