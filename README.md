@@ -277,6 +277,20 @@ Here the hierarchies are preserved:
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/08de784b-1b20-4a87-aeb8-f64af672aa5c)
 
+After flatten command:
+
+```bash
+flatten
+write_verilog -noattr multiple_modules_flat.v
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/f0761ab6-9e8f-4a83-815a-94c9d9bc5598)
+
+To make a submodule level synthesis go through yosys chain of command to read the design as common:
+
+```bash
+read_liberty -lib 
+```
 
 
 </details>
