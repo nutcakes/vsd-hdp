@@ -314,7 +314,15 @@ Why flops? In a combinational circuit, the propagation delay can be seen as a gl
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/028bb802-66e8-4120-9f08-81831caf24c1)
 
+To simulate, iverilog and gtkwave can be invoked.
 
+```bash
+iverilog dff_asyncres.v tb_dff_asyncres.v
+./a.out
+gtkwave tb_dff_asyncres.vcd
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/dd98a88e-4277-4a00-96ff-482f21c0aeb7)
 
 
 </details>
