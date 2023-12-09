@@ -267,6 +267,13 @@ The difference can be seen on yosys, after following the same chain of commands 
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/61258857-79ab-4d1c-a8ec-1107fa84f51d)
 
+```bash
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show multiple_modules
+write_verilog multiple_modules_hier.v
+```
+
+Here the hierarchies are preserved:
 
 
 </details>
