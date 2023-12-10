@@ -380,7 +380,7 @@ Optimizations enable logical implementations to happen with no hardware involved
 
 <details>
  <summary> 1# Introduction to optimizations </summary>
-
+Combinational logic optimisation bring power and area savings by squeezing the logic to get the most optimised design; Constant Propagation is a direct optimisation; Boolean Logic Optimisation can be K-Map and Quine McKluskey.
 
 
 </details>
