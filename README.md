@@ -371,7 +371,7 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/ca88f38c-7e10-4563-bacc-2ff08e735755)
 
-
+Optimizations enable logical implementations to happen with no hardware involved.
 
 </details>
 
