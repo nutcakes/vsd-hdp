@@ -351,6 +351,28 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/171b8f53-ea62-4101-ac7a-d1e1b2c2e0e4)
 
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_async_set.v
+synth -top dff_async_set
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/3c19add2-55cd-4603-8c58-fe8ab160423c)
+
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_syncres.v
+synth -top dff_syncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/ca88f38c-7e10-4563-bacc-2ff08e735755)
+
+
+
 </details>
 
 ## DAY 3
