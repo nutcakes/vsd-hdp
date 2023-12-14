@@ -380,7 +380,14 @@ Optimizations enable logical implementations to happen with no hardware involved
 
 <details>
  <summary> 1# Introduction to optimizations </summary>
-Combinational logic optimisation bring power and area savings by squeezing the logic to get the most optimised design; Constant Propagation is a direct optimisation; Boolean Logic Optimisation can be K-Map and Quine McKluskey.
+Combinational logic optimisation bring power and area savings by squeezing the logic to get the most optimised design; Some techniques are Constant Propagation, which is a direct optimisation, and Boolean Logic Optimisation, like K-Map and Quine McKluskey done in the synthesis process.
+
+One basic type of Sequential Logic optimisation is Sequential Constant propagation and it follows Q to have a constant value, for example in a flop where Q=0 it does not need to be retained in a circuit.
+Other, more advanced, types of Sequential optimisations are not convered in the labs, but are:
+
+- State: Optimisation of unused states
+- Cloning: Physical aware synthesis, for example reduce physical distance.
+- Retiming: For example spread/partitioning the logic based on timing analysis to work on higher frequencies.
 
 
 </details>
