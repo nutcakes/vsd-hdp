@@ -396,6 +396,7 @@ Other, more advanced, types of Sequential optimisations are not convered in the 
 Files used for the lab:
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/cc209379-2a9c-4d4e-abb2-acfe2c40b3cd)
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/f573f3b4-e85d-41b1-8f2a-3301d17904b3)
 
 Commands inside yosys are the same as before, with the addition of opt_clean before linking to liberty, as shown below:
 ```bash
@@ -419,7 +420,48 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/af017ea0-9a7b-4a4f-b140-e63ef8f267c5)
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/d154a1ac-87b6-4e5e-b560-8c26881f7668)
 
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog opt_check3.v
+synth -top opt_check3
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
 
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/d60eaf62-f014-4806-a61b-16dc19a98228)
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/8ea05a09-8869-4109-b6be-8e9aec415465)
+
+```bash
+read_verilog opt_check4.v
+synth -top opt_check4
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/a1113426-a8ff-47fd-8554-bb4c4f1acd65)
+
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_module_opt.v
+synth -top multiple_module_opt
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+flatten
+opt_clean -purge
+write_verilog -noattr multiple_module__opt_flat.v
+```
+
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_module_opt2.v
+synth -top multiple_module_opt2
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+flatten
+write_verilog -noattr multiple_module__opt2_flat.v
+read_verilog multiple_module_opt2_flat.v
+synth -top multiple_module_opt2_flat
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
 
 </details>
 <details>
