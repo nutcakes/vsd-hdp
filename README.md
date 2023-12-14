@@ -389,10 +389,35 @@ Other, more advanced, types of Sequential optimisations are not convered in the 
 - Cloning: Physical aware synthesis, for example reduce physical distance.
 - Retiming: For example spread/partitioning the logic based on timing analysis to work on higher frequencies.
 
-
 </details>
 <details>
  <summary> 2# Combinational logic optimizations </summary>
+
+Files used for the lab:
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/cc209379-2a9c-4d4e-abb2-acfe2c40b3cd)
+
+Commands inside yosys are the same as before, with the addition of opt_clean before linking to liberty, as shown below:
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog opt_check.v
+synth -top opt_check
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/e866e1df-591a-419f-9528-c8573731462d)
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/0153a824-e325-4eb9-8c5d-fb5ee5b23418)
+
+```bash
+read_verilog opt_check2.v
+synth -top opt_check2
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/af017ea0-9a7b-4a4f-b140-e63ef8f267c5)
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/d154a1ac-87b6-4e5e-b560-8c26881f7668)
 
 
 
