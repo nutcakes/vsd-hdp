@@ -467,6 +467,35 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 <details>
  <summary> 3# Sequential logic optimizations </summary>
 
+Files to be used:
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/73213f7c-3c9c-411e-965f-70a5f7325174)
+
+Q behavior in dff_const1 and dff_const2:
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/1a94e267-7ba4-4958-8f16-6c638cf224ae)
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/fc717d2a-a31e-422f-828c-b9b0f096fa76)
+
+Synthesis:
+
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const1.v
+synth -top dff_const1
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/14a64e2b-7438-4790-9c43-d9ea3a1493a8)
+
+```bash
+read_verilog dff_const2.v
+synth -top dff_const2
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/f96270ad-7d62-468e-b28e-b37dbec66725)
 
 
 </details>
