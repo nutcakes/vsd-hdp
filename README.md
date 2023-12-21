@@ -503,6 +503,63 @@ show
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/f96270ad-7d62-468e-b28e-b37dbec66725)
 
+```bash
+iverilog dff_const3.v tb_dff_const3.v
+./a.out
+gtkwave tb_dff_const3.vcd
+```
+
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/4265baca-b2ce-4c4c-bac9-ed72b6558d6b)
+
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const3.v
+synth -top dff_const3
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/12bed2c3-5595-4ccb-b97a-2307171abfcf)
+
+```bash
+iverilog dff_const4.v tb_dff_const4.v
+./a.out
+gtkwave tb_dff_const4.vcd
+```
+
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/40ce72f6-c46f-46c1-a8c4-5a16afde55f5)
+
+
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const4.v
+synth -top dff_const4
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/c0b26e71-8c21-4f29-b957-8a72cf0de233)
+
+```bash
+iverilog dff_const5.v tb_dff_const5.v
+./a.out
+gtkwave tb_dff_const5.vcd
+```
+
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/3993614a-c180-4d6a-829b-92ea134d8893)
+
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_const5.v
+synth -top dff_const5
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/ac7ade3c-e446-4bfd-9656-712db5cc4d0f)
 
 </details>
 <details>
