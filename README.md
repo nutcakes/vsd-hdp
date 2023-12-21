@@ -565,7 +565,27 @@ show
 <details>
  <summary> 4# Sequential optimizations for unused outputs </summary>
 
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog counter_opt.v
+synth -top counter_opt
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
 
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/802e2f70-de22-4029-b773-cbde23f49ea9)
+
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog counter_opt2.v
+synth -top counter_opt
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/4020bb5d-17de-4f87-9145-53a208384116)
 
 </details>
 
