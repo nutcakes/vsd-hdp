@@ -436,6 +436,7 @@ read_verilog opt_check4.v
 synth -top opt_check4
 opt_clean -purge
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
 ```
 
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/a1113426-a8ff-47fd-8554-bb4c4f1acd65)
@@ -444,24 +445,29 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog multiple_module_opt.v
 synth -top multiple_module_opt
-abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 flatten
 opt_clean -purge
-write_verilog -noattr multiple_module__opt_flat.v
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+write_verilog -noattr multiple_module_opt_flat.v
 ```
+
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/62fcec7f-68dc-4774-87c7-554ef85db71c)
+
 
 ```bash
 read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog multiple_module_opt2.v
 synth -top multiple_module_opt2
-abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 flatten
-write_verilog -noattr multiple_module__opt2_flat.v
-read_verilog multiple_module_opt2_flat.v
-synth -top multiple_module_opt2_flat
 opt_clean -purge
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+write_verilog -noattr multiple_module_opt2_flat.v
 ```
+
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/84996f47-2512-4e58-9c0f-bacf56f3505f)
+
 
 </details>
 <details>
@@ -500,7 +506,7 @@ show
 
 </details>
 <details>
- <summary> 4# Sequential optimzations for unused outputs </summary>
+ <summary> 4# Sequential optimizations for unused outputs </summary>
 
 
 
