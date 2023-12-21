@@ -587,6 +587,9 @@ show
 
 ![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/4020bb5d-17de-4f87-9145-53a208384116)
 
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/7f929391-8cdf-4dc6-bad4-dca69e6b4521)
+
+
 </details>
 
 ## DAY 4
