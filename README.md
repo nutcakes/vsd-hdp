@@ -599,6 +599,10 @@ show
  <summary> 1# GLS, Synthesis-Simulation mismatch and Blocking/Non-blocking statements </summary>
 The goal is to perform RTL simulation, synthesis and GLS simulation for ternary_operator_mux.v, bad_mux.v and blocking_caveat.v comparing the RTL and Gate level simulation results to remove mismatches and non desired statements.
 
+</details>
+<details>
+ <summary> 2# Labs on GLS and Synthesis-Simulation Mismatch </summary>
+
 Begin by checking the current waveform of the code:
 ```bash
 iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
@@ -620,12 +624,14 @@ show
 
 ![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/14c5f071-5eab-4ada-a8e6-cd76fe0f7002)
 
+Next, perform GLS simulation:
+```bash
+iverilog ../mylib/verilog_model/primitives.v ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib ternary_operator_mux_net.v tb_ternary_operator_mux.v
+./a.out
+gtkwave tb_ternary_operator_mux.vcd
+```
 
-</details>
-<details>
- <summary> 2# Labs on GLS and Synthesis-Simulation Mismatch </summary>
-
-
+(print)
 
 </details>
 <details>
