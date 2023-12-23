@@ -603,7 +603,7 @@ The goal is to perform RTL simulation, synthesis and GLS simulation for ternary_
 <details>
  <summary> 2# Labs on GLS and Synthesis-Simulation Mismatch </summary>
 
-Begin by checking the current waveform of the code:
+Begin by checking the current waveform of the code (ternary_operator_mux.v):
 ```bash
 iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
 ./a.out
@@ -633,11 +633,69 @@ gtkwave tb_ternary_operator_mux.vcd
 
 (print)
 
+Begin by checking the current waveform of the code (bad_mux.v):
+```bash
+iverilog bad_mux.v tb_bad_mux.v
+./a.out
+gtkwave tb_bad_mux.vcd
+```
+
+(print)
+
+Then, synthesize and write the GLS netlist:
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog bad_mux.v
+synth -top bad_mux
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog -noattr bad_mux_net.v
+show
+```
+
+(print)
+
+Next, perform GLS simulation:
+```bash
+iverilog ../mylib/verilog_model/primitives.v ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib bad_mux_net.v tb_bad_mux.v
+./a.out
+gtkwave tb_bad_mux.vcd
+```
+
+(print)
+
 </details>
 <details>
  <summary> 3# Labs on synth-sim mismatch for blocking statement </summary>
 
+Begin by checking the current waveform of the code (blocking_caveat.v):
+```bash
+iverilog blocking_caveat.v tb_blocking_caveat.v
+./a.out
+gtkwave tb_blocking_caveat.vcd
+```
 
+(print)
+
+Then, synthesize and write the GLS netlist:
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog blocking_caveat.v
+synth -top blocking_caveat
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog -noattr blocking_caveat_net.v
+show
+```
+
+(print)
+
+Next, perform GLS simulation:
+```bash
+iverilog ../mylib/verilog_model/primitives.v ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib blocking_caveat_net.v tb_blocking_caveat.v
+./a.out
+gtkwave tb_blocking_caveat.vcd
+```
+
+(print)
 
 </details>
 
