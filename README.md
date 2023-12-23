@@ -40,7 +40,7 @@ $ apt install yosys
  <details>
 <summary> opensta </summary>
 Installation of OpenSource gate level static timing verifier - OpenSta
- ```bash
+```bash
 sudo apt install cmake clang gcctcl swig bison flex
 git clone https://github.com/The-OpenROAD-Project/OpenSTA.git
 cd OpenSTA
@@ -626,12 +626,12 @@ show
 
 Next, perform GLS simulation:
 ```bash
-iverilog ../mylib/verilog_model/primitives.v ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib ternary_operator_mux_net.v tb_ternary_operator_mux.v
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v ternary_operator_mux_net.v tb_ternary_operator_mux.v
 ./a.out
 gtkwave tb_ternary_operator_mux.vcd
 ```
 
-(print)
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/fac1e163-2b1a-4fb4-ba3d-ab98fc81263d)
 
 Begin by checking the current waveform of the code (bad_mux.v):
 ```bash
@@ -640,7 +640,8 @@ iverilog bad_mux.v tb_bad_mux.v
 gtkwave tb_bad_mux.vcd
 ```
 
-(print)
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/6c24a91b-3cae-4104-a903-763b016b8d44)
+
 
 Then, synthesize and write the GLS netlist:
 ```bash
@@ -652,16 +653,16 @@ write_verilog -noattr bad_mux_net.v
 show
 ```
 
-(print)
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/316e1cec-a025-49cf-b57f-a24742a5cc6c)
 
 Next, perform GLS simulation:
 ```bash
-iverilog ../mylib/verilog_model/primitives.v ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib bad_mux_net.v tb_bad_mux.v
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v bad_mux_net.v tb_bad_mux.v
 ./a.out
 gtkwave tb_bad_mux.vcd
 ```
 
-(print)
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/46b33c89-0e51-4941-aa9e-5c99ff2d0787)
 
 </details>
 <details>
@@ -674,7 +675,7 @@ iverilog blocking_caveat.v tb_blocking_caveat.v
 gtkwave tb_blocking_caveat.vcd
 ```
 
-(print)
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/36a1d5e3-3403-4e74-bc03-fe8b6be15521)
 
 Then, synthesize and write the GLS netlist:
 ```bash
@@ -686,16 +687,16 @@ write_verilog -noattr blocking_caveat_net.v
 show
 ```
 
-(print)
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/6cc7159c-c8d4-41d3-a342-a7eb2e00b5aa)
 
 Next, perform GLS simulation:
 ```bash
-iverilog ../mylib/verilog_model/primitives.v ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib blocking_caveat_net.v tb_blocking_caveat.v
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v blocking_caveat_net.v tb_blocking_caveat.v
 ./a.out
 gtkwave tb_blocking_caveat.vcd
 ```
 
-(print)
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/6cfb53a5-a75b-4aee-8f28-fb6fe8441e47)
 
 </details>
 
