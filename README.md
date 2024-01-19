@@ -40,6 +40,7 @@ $ apt install yosys
  <details>
 <summary> opensta </summary>
 Installation of OpenSource gate level static timing verifier - OpenSta
+      
 ```bash
 sudo apt install cmake clang gcctcl swig bison flex
 git clone https://github.com/The-OpenROAD-Project/OpenSTA.git
@@ -50,6 +51,7 @@ cmake ..
 make
 apt install opensta
 ```
+
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/9a10a693-b5ba-4ae0-8fb5-ea41204b4305)
 
 </details>
