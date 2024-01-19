@@ -58,7 +58,7 @@ apt install opensta
 
 Installation of OpenSource Spice (analog electronic circuit) simulator - NgSpice
 
- ```bash
+```bash
 wget https://sourceforge.net/projects/ngspice/files/ng-spice-rework/old-releases/37/ngspice-37.tar.gz/download -o ngspice-37.tar.gz
 tar -zxvf ngspice-37.tar.gz
 cd ngspice-37
@@ -67,7 +67,8 @@ cd release
 ../configure  --with-x --with-readline=yes --disable-debug
 make
 sudo make install
- ```
+```
+
 ![image](https://github.com/nutc4k3/vsd-hdp/assets/25620946/ac6a5e67-57df-4f20-bf7f-271b0b7df33e)
 
 </details>
