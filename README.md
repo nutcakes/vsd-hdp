@@ -725,6 +725,68 @@ mulw and divw are multiply extensions of RV64M
 <img width="1316" alt="Screenshot 2024-01-22 at 14 41 34" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/0ef65e63-20bb-41b5-b480-8a3951e51a6d">
 <img width="1316" alt="Screenshot 2024-01-22 at 14 42 30" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/833bbdb7-d78f-4b78-b230-1e5b90ca9218">
 
+```bash sum1ton.c
+#include <stdio.h>
+
+int main() {
+     int i, sum = 0, n = 5;
+     for (i=1; i <=n; ++i){
+          sum +=1;
+     }
+     printf("Sum of numbers from 1 to %d is %d", n, sum);
+     return 0;
+}
+```
+
+<img width="506" alt="Screenshot 2024-01-22 at 14 53 26" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/2035141c-c439-4a30-9ff2-66d8793e247c">
+
+Installation:
+```bash
+mkdir riscv
+cd riscv
+mkdir _install
+export PATH=`pwd`/_install/bin:$PATH
+hash -r
+# gcc, binutils, newlib
+git clone --recursive https://github.com/riscv/riscv-gnu-toolchain
+pushd riscv-gnu-toolchain
+./configure --prefix=`pwd`/../_install --enable-multilib
+make -j`nproc`
+```
+
+Code:
+```bash
+riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.cc
+riscv64-unknown-elf-objdump -d sum1ton.o |less
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.cc
+riscv64-unknown-elf-objdump -d sum1ton.o |less
+
+riscv64-unknown-elf-gcc = to invoke the gcc compiler
+ 		-O1 = Specifies the optimization level. (O1 is moderate level of optimization and Ofast is highest level of optimization
+			-mabi = This flag specifies the ABI (Application Binary Interface) to be used. In this case, it is set to lp64, which stands for "long 				and pointer 64-bit." This ABI defines the sizes of basic C types, such as int and pointers. lp64 means that int is 32 bits, and 				pointers and long types are 64 bits.
+   			-march = specifies the target RISCV architecture and ISA, rv64i means a 64-bit RISC-V architecture with the base integer ISA.
+  		-o = output file name and format
+ 			-c = input source file and name
+          -d - dissassemble
+
+After running -Ofast option 3 instructions got optimized.
+
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.cc
+spike pk sum1ton.o
+spike -d pk sum1ton.o
+: until pc 0 100b0 (run only until 100b0 memory address)
+: reg 0 a2 (show contents of register a2)
+: (press enter to run next instruction)
+: reg 0 a2 (change in value to 0x1000)
+: reg 0 a0
+: (press enter and so on...)
+: reg 0 sp (stack point register)
+```
+
+<img width="1280" alt="Screenshot 2024-01-22 at 15 23 46" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/0180f6f0-3417-47c8-9092-d1f38b0b0611">
+<img width="1280" alt="Screenshot 2024-01-22 at 15 27 36" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/925101fd-09dc-4f9c-a696-f458d0a6ea77">
+
+
 
 </details>
 <details>
