@@ -740,6 +740,10 @@ int main() {
 
 <img width="506" alt="Screenshot 2024-01-22 at 14 53 26" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/2035141c-c439-4a30-9ff2-66d8793e247c">
 
+</details>
+<details>
+ <summary> 2# Labwork for RISC-V software toolchain  </summary>
+
 Installation:
 ```bash
 mkdir riscv
@@ -785,13 +789,6 @@ spike -d pk sum1ton.o
 
 <img width="1280" alt="Screenshot 2024-01-22 at 15 23 46" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/0180f6f0-3417-47c8-9092-d1f38b0b0611">
 <img width="1280" alt="Screenshot 2024-01-22 at 15 27 36" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/925101fd-09dc-4f9c-a696-f458d0a6ea77">
-
-
-
-</details>
-<details>
- <summary> 2# Labwork for RISC-V software toolchain  </summary>
-
 
 
 </details>
