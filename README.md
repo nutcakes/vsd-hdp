@@ -704,3 +704,24 @@ gtkwave tb_blocking_caveat.vcd
 
 </details>
 
+## DAY 5
+> Introduction to RISC-V ISA and GNU compiler toolchain
+
+<details>
+ <summary> 1# Introduction to RISC-V basic keywords </summary>
+
+
+
+</details>
+<details>
+ <summary> 2# Labwork for RISC-V software toolchain  </summary>
+
+
+
+</details>
+<details>
+ <summary> 3# Integer number representation  </summary>
+
+
+
+</details>
