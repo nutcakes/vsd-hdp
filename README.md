@@ -707,8 +707,15 @@ gtkwave tb_blocking_caveat.vcd
 ## DAY 5
 > Introduction to RISC-V ISA and GNU compiler toolchain
 
+<img width="1316" alt="Screenshot 2024-01-22 at 14 20 48" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/32cb6c27-c527-4416-be62-11d23e7d6ebd">
+
 <details>
  <summary> 1# Introduction to RISC-V basic keywords </summary>
+
+<img width="1316" alt="Screenshot 2024-01-22 at 14 28 43" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/8219b13b-c590-456d-aaec-d34125891666">
+<img width="1316" alt="Screenshot 2024-01-22 at 14 29 47" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/8ba98e54-115d-4b01-8f06-f93589754861">
+<img width="1316" alt="Screenshot 2024-01-22 at 14 30 53" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/81383ecb-d2d1-4c4b-a416-b247bae6c41b">
+<img width="1316" alt="Screenshot 2024-01-22 at 14 31 27" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/9b375194-2a05-4bb7-816f-23f0ef28532d">
 
 
 
