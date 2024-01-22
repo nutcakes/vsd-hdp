@@ -717,7 +717,13 @@ gtkwave tb_blocking_caveat.vcd
 <img width="1316" alt="Screenshot 2024-01-22 at 14 30 53" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/81383ecb-d2d1-4c4b-a416-b247bae6c41b">
 <img width="1316" alt="Screenshot 2024-01-22 at 14 33 50" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/37a0c439-e2ec-45c2-a767-8f1d9de3030b">
 <img width="1316" alt="Screenshot 2024-01-22 at 14 34 38" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/e3983682-1442-44b8-a796-e2a90a55c26a">
+<img width="1316" alt="Screenshot 2024-01-22 at 14 37 16" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/1d47b64c-25af-4d48-a9ab-0f0621572511">
 
+mulw and divw are multiply extensions of RV64M
+
+<img width="1316" alt="Screenshot 2024-01-22 at 14 40 24" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/c50a8353-fa9b-48f0-9a61-383c6047d2e3">
+<img width="1316" alt="Screenshot 2024-01-22 at 14 41 34" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/0ef65e63-20bb-41b5-b480-8a3951e51a6d">
+<img width="1316" alt="Screenshot 2024-01-22 at 14 42 30" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/833bbdb7-d78f-4b78-b230-1e5b90ca9218">
 
 
 </details>
