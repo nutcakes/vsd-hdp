@@ -744,19 +744,7 @@ int main() {
 <details>
  <summary> 2# Labwork for RISC-V software toolchain  </summary>
 
-Installation:
-```bash
-mkdir riscv
-cd riscv
-mkdir _install
-export PATH=`pwd`/_install/bin:$PATH
-hash -r
-# gcc, binutils, newlib
-git clone --recursive https://github.com/riscv/riscv-gnu-toolchain
-pushd riscv-gnu-toolchain
-./configure --prefix=`pwd`/../_install --enable-multilib
-make -j`nproc`
-```
+Installation can be made using the following script: [run.sh](https://github.com/kunalg123/riscv_workshop_collaterals/blob/master/run.sh)
 
 Code:
 ```bash
