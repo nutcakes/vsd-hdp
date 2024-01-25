@@ -783,6 +783,25 @@ spike -d pk sum1ton.o
 <details>
  <summary> 3# Integer number representation  </summary>
 
+<img width="1293" alt="Screenshot 2024-01-25 at 15 48 35" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/2a15c1ed-2993-430c-8916-97c518333a77">
+<img width="1293" alt="Screenshot 2024-01-25 at 15 52 45" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/e541073e-eca8-4d4b-ab53-e522427e10c6">
+<img width="995" alt="Screenshot 2024-01-25 at 15 53 45" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/0b4b38bb-5ff8-4817-9cc0-7ed29490805d">
+<img width="1220" alt="Screenshot 2024-01-25 at 15 56 30" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/092eae80-0fa0-459e-ae18-0032a85741ac">
+<img width="1220" alt="Screenshot 2024-01-25 at 15 57 57" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/f041571d-3525-450a-883d-84ffe1d26397">
+
+```bash
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	unsigned long long int max = (unsigned long long int) (pow2,63) -1);
+	unsigned long long int min = (unsigned long long int) (pow2,63) * -1);
+	printf("highest number represented by long long int is %llu\n", max);
+	printf("lowest number represented by long long int is %llu\n", min);
+	return 0;
+}
+```
+
 
 
 </details>
