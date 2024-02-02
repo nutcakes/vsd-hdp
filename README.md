@@ -748,9 +748,9 @@ Installation can be made using the following script: [run.sh](https://github.com
 
 Code:
 ```bash
-riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.cc
+riscv64-unknown-elf-gcc -O1 -o sum1ton.o sum1ton.c
 riscv64-unknown-elf-objdump -d sum1ton.o |less
-riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.cc
+riscv64-unknown-elf-gcc -Ofast -o sum1ton.o sum1ton.c
 riscv64-unknown-elf-objdump -d sum1ton.o |less
 
 riscv64-unknown-elf-gcc = to invoke the gcc compiler
@@ -774,6 +774,10 @@ spike -d pk sum1ton.o
 : (press enter and so on...)
 : reg 0 sp (stack point register)
 ```
+<img width="424" alt="Screenshot 2024-02-02 at 11 17 34" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/3d82c10e-484b-49f2-8db4-804a0b56f1ce">
+<img width="741" alt="Screenshot 2024-02-02 at 11 18 04" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/282e49ff-f6b1-4453-874e-350c02238b2f">
+<img width="459" alt="Screenshot 2024-02-02 at 11 18 43" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/fbf80153-a1b1-4d30-9f3d-96ee6f5b63f5">
+<img width="742" alt="Screenshot 2024-02-02 at 11 19 02" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/a762085f-2546-48d6-ba8c-7236925781d3">
 
 <img width="1280" alt="Screenshot 2024-01-22 at 15 23 46" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/0180f6f0-3417-47c8-9092-d1f38b0b0611">
 <img width="1280" alt="Screenshot 2024-01-22 at 15 27 36" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/925101fd-09dc-4f9c-a696-f458d0a6ea77">
