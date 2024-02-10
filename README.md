@@ -748,14 +748,14 @@ Installation can be made using the following script: [run.sh](https://github.com
 
 Code:
 ```bash
-riscv64-unknown-elf-gcc -O1 -o sum1ton.o sum1ton.c
+riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 riscv64-unknown-elf-objdump -d sum1ton.o |less
-riscv64-unknown-elf-gcc -Ofast -o sum1ton.o sum1ton.c
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 riscv64-unknown-elf-objdump -d sum1ton.o |less
 
 riscv64-unknown-elf-gcc = to invoke the gcc compiler
  		-O1 = Specifies the optimization level. (O1 is moderate level of optimization and Ofast is highest level of optimization
-			-mabi = This flag specifies the ABI (Application Binary Interface) to be used. In this case, it is set to lp64, which stands for "long 				and pointer 64-bit." This ABI defines the sizes of basic C types, such as int and pointers. lp64 means that int is 32 bits, and 				pointers and long types are 64 bits.
+			-mabi = This flag specifies the ABI (Application Binary Interface) to be used. In this case, it is set to lp64, which stands for "long 				and pointer 64-bit." This ABI defines the sizes of basic C types, such as int and pointers. lp64 means that int is 32 bits, and pointers and long types are 64 bits.
    			-march = specifies the target RISCV architecture and ISA, rv64i means a 64-bit RISC-V architecture with the base integer ISA.
   		-o = output file name and format
  			-c = input source file and name
@@ -798,10 +798,10 @@ spike -d pk sum1ton.o
 #include <math.h>
 
 int main(){
-	unsigned long long int max = (unsigned long long int) (pow2,63) -1);
-	unsigned long long int min = (unsigned long long int) (pow2,63) * -1);
-	printf("highest number represented by long long int is %llu\n", max);
-	printf("lowest number represented by long long int is %llu\n", min);
+	long long int max = (long long int) (pow2,63) -1);
+	long long int min = (long long int) (pow2,63) * -1);
+	printf("highest number represented by long long int is %lld\n", max);
+	printf("lowest number represented by long long int is %lld\n", min);
 	return 0;
 }
 ```
