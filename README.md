@@ -781,6 +781,8 @@ spike -d pk sum1ton.o
 
 <img width="1280" alt="Screenshot 2024-01-22 at 15 23 46" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/0180f6f0-3417-47c8-9092-d1f38b0b0611">
 <img width="1280" alt="Screenshot 2024-01-22 at 15 27 36" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/925101fd-09dc-4f9c-a696-f458d0a6ea77">
+![spike](https://github.com/nutcakes/vsd-hdp/assets/154557310/f1d48da0-18f4-4e68-b7c8-83967fdfd5f1)
+
 
 
 </details>
@@ -806,10 +808,62 @@ int main(){
 }
 ```
 
+
+![unisignedHighest](https://github.com/nutcakes/vsd-hdp/assets/154557310/5a4bd992-8ea1-4be2-963e-b01ab5c13cd2)
+![unsignedHighest2](https://github.com/nutcakes/vsd-hdp/assets/154557310/f21976be-ed36-4d12-9c74-aba8d3933fb9)
+![unsignedHighest3](https://github.com/nutcakes/vsd-hdp/assets/154557310/9f66b240-a815-44a5-9764-225bd8ecdcea)
+![unsignedHighest4](https://github.com/nutcakes/vsd-hdp/assets/154557310/bedd05c2-d3d5-4584-801d-112bc3baee16)
+![signedint](https://github.com/nutcakes/vsd-hdp/assets/154557310/6411a960-e440-4cdc-8f8d-40cefc17ccb3)
+![signedint2](https://github.com/nutcakes/vsd-hdp/assets/154557310/5e5d35c2-060c-413e-b1b2-b16f34784031)
+![signedint3](https://github.com/nutcakes/vsd-hdp/assets/154557310/3bb973ac-449b-4f92-906c-055ce95c4a97)
+![signedint4](https://github.com/nutcakes/vsd-hdp/assets/154557310/695ef13e-d09d-4c46-b9ee-0bffba7ae432)
+![signedint5](https://github.com/nutcakes/vsd-hdp/assets/154557310/ce2a18d2-1062-46e1-afa4-2188c837f1fa)
+<img width="1107" alt="Screenshot 2024-02-09 at 14 40 29" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/0caabe90-8214-4b1b-b2f8-82b2f3f74f91">
+
+
 </details>
 
 ## DAY 6
 > Introduction to ABI and basic verification flow
 
+<img width="1272" alt="Screenshot 2024-02-09 at 14 59 07" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/7e54502f-8c97-4bd9-8426-364b7fbbb45d">
 
+<details>
+ <summary> 1# Application Binary interface (ABI) </summary>
+
+<img width="1272" alt="Screenshot 2024-02-09 at 15 11 12" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/3e8e61c2-f6de-4a9c-867d-1881c3ffe1e2">
+<img width="1272" alt="Screenshot 2024-02-09 at 15 12 10" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/0758a0ea-160c-4c75-adb8-a7ec987dbab7">
+
+
+<img width="1071" alt="Screenshot 2024-02-12 at 16 26 58" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/2e41f225-60cf-43e5-ad18-e97e8475b1fe">
+<img width="1222" alt="Screenshot 2024-02-12 at 16 27 45" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/97291e08-7b38-4fd9-9f18-fcc092dbf3e0">
+
+
+<img width="1222" alt="Screenshot 2024-02-12 at 16 30 01" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/3d772e14-2725-47ee-af0c-cb7904fc430d">
+<img width="1222" alt="Screenshot 2024-02-12 at 16 30 13" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/858254b6-922e-4f6b-9df2-cf258b8c9530">
+
+
+<img width="1222" alt="Screenshot 2024-02-12 at 16 31 11" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/0fc669c7-b49a-4db1-9003-15754982d591">
+<img width="1222" alt="Screenshot 2024-02-12 at 16 32 27" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/3c8a3c54-a6c6-4df5-8e3c-75176f617687">
+
+
+<img width="1222" alt="Screenshot 2024-02-12 at 16 58 21" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/4087f029-6585-48fe-8877-d218e3a3c5e5">
+<img width="1222" alt="Screenshot 2024-02-12 at 16 59 03" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/7c2f9012-7e2d-4e77-b724-e3562b30c3a0">
+<img width="1151" alt="Screenshot 2024-02-12 at 22 00 03" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/5bdb9309-4c18-49d5-9953-70a1c8f0a339">
+<img width="1222" alt="Screenshot 2024-02-12 at 16 59 42" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/a54b5ae1-23b0-4657-9f0d-43f85e5e50ce">
+<img width="1222" alt="Screenshot 2024-02-12 at 17 00 49" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/6ba3ecfb-1cb4-4d53-bb94-2e8e9e9fa8de">
+
+
+
+<img width="1222" alt="Screenshot 2024-02-12 at 17 02 09" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/6ea813e0-c8e1-433c-bde0-811e0dc0e2c2">
+
+</details>
+<details>
+ <summary> 2# Lab work using ABI function calls </summary>
+
+</details>
+<details>
+ <summary> 3# Basic verification flow using iverilog </summary>
+
+</details>
 
