@@ -862,10 +862,15 @@ int main(){
  <summary> 2# Lab work using ABI function calls </summary>
 
 <img width="927" alt="Screenshot 2024-02-16 at 18 33 57" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/74b2478d-5242-4f72-9da6-5f25fd5e2b06">
+
 ![1_1to9c](https://github.com/nutcakes/vsd-hdp/assets/154557310/b5676029-7d48-444c-b60d-9f70697c73c9)
+
 ![2_loadS](https://github.com/nutcakes/vsd-hdp/assets/154557310/dd55d73c-fcad-42d6-9a00-730d97ba3fb7)
+
 ![3_spike1to9load](https://github.com/nutcakes/vsd-hdp/assets/154557310/8854421e-a5a8-45f1-b2a4-1a77621ea5a5)
+
 ![4_objdump1to9](https://github.com/nutcakes/vsd-hdp/assets/154557310/0a55b6d5-a09d-45b3-9075-3890ffdd9223)
+
 ![5_2objdump1to9](https://github.com/nutcakes/vsd-hdp/assets/154557310/fb53ce36-7178-4c84-8362-44f18b82fcb1)
 
 </details>
@@ -881,6 +886,7 @@ testbench.v is the testbench for the entire thing, where picorv32 is a uut
 rv32im.sh is a script to convert the code to hex file, load it in the memory of picorv32 and run it.
 ```
 <img width="416" alt="Screenshot 2024-02-16 at 19 08 28" src="https://github.com/nutcakes/vsd-hdp/assets/154557310/8991c551-d56a-4d66-9d46-0cc7d6e9a495">
+
 ![6_rv32imsh](https://github.com/nutcakes/vsd-hdp/assets/154557310/5c59f3d8-f425-4c45-9321-f1d578646f78)
 
 </details>
