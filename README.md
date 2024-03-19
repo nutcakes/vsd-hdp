@@ -966,7 +966,7 @@ MSB in x30[14:8] is a and LSB in x30[14:8] is g segments in 7 segment display pi
 | - | 0000001 |
 
 
-<details>
+
 C program:
 ```c 
 int read_keypad(void);
@@ -1350,6 +1350,5 @@ int read_next(void)
         return next;
 }
 ```
-</details>
 
  </details>
