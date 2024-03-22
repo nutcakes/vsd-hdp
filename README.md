@@ -1865,4 +1865,38 @@ riscv64-unknown-elf-objdump -d out |less
 <details>
  <summary> 3# Simulation </summary>
 
+```bash
+gtkwave waveform.vcd
+```
+
+(print 1_gtkwave)
+
+Initially, we keep input_display=1 for taking inputs from keypad while the 7 segment displays a hypen (hex code 0x01) as shown below.
+
+(print 2_gtkwave)
+
+Then, we provide keypad_col=4'b1110 when keypad_row=4'b1110 to simulate pressing of button 1. Then we observe hex code 0x30 in 7 segment display corresponsing to digit 1.
+
+(print 3_gtkwave)
+
+Then, we provide keypad_col=4'b1101 when keypad_row=4'b1110 to simulate pressing of button 2. Then we observe hex code 0x6D in 7 segment display corresponsing to digit 2.
+
+(print 4_gtkwave)
+
+Then, we provide keypad_col=4'b1101 when keypad_row=4'b1101 to simulate pressing of button 5. Then we observe hex code 0x5B in 7 segment display corresponsing to digit 5.
+
+(print 5_gtkwave)
+
+We press next button to make controller store each character in memory as shown below. Then, when we don't press any button to see that the controller keeps on scanning for button press and finds none as the keypad_col=4'b1111; Finally, we press * button to indicate null character but it will not be displayed in the 7 segment display. For this keypad_col=4'b1110 and keypad_row=4'b0111.
+
+(print 6_gtkwave)
+
+Then, we make input_display=0 to activate display mode. In this mode, the previously stored characters are displayed continuously with some delay indicated by delay pin. The characters 1,2 & 5 are displayed continuously as shown below. Mode led is used to indicate whether it is input_mode or display_mode. Mode led=1 when input mode, else it is 0.
+
+(print 7_gtkwave)
+
+</details>
+<details>
+ <summary> 4# Gate level synthesis & Simulation </summary>
+	
 </details>
