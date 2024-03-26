@@ -1844,7 +1844,9 @@ Commands used as follows:
 riscv64-unknown-elf-gcc -march=rv64i -mabi=lp64 -ffreestanding -o out display_controller_debug.c
 spike pk out
 ```
-(print 1_debug)
+
+![1_debug](https://github.com/nutcakes/vsd-hdp/assets/154557310/7d104ee2-b662-4274-ac83-d3ea9cc4d6b9)
+
 
 Assembly:
 
@@ -1852,14 +1854,16 @@ Assembly:
 riscv64-unknown-elf-objdump -d out |less
 ```
 
-(print 1_debug_objdump)
+![1_debug_objdump](https://github.com/nutcakes/vsd-hdp/assets/154557310/47da5178-52d4-41d9-ae00-70ca3c2368c7)
+
 
 ```bash
 riscv64-unknown-elf-gcc -march=rv64i -mabi=lp64 -ffreestanding -o out display_controller.c
 riscv64-unknown-elf-objdump -d out |less
 ```
 
-(print 1_objdump)
+![1_objdump](https://github.com/nutcakes/vsd-hdp/assets/154557310/263e1735-7025-4623-857e-f98ba9ca07bb)
+
 
 </details>
 <details>
@@ -1869,31 +1873,31 @@ riscv64-unknown-elf-objdump -d out |less
 gtkwave waveform.vcd
 ```
 
-(print 1_gtkwave)
+![1_gtkwave](https://github.com/nutcakes/vsd-hdp/assets/154557310/ec912132-c433-48cf-87c3-c30ecece298a)
 
 Initially, we keep input_display=1 for taking inputs from keypad while the 7 segment displays a hypen (hex code 0x01) as shown below.
 
-(print 2_gtkwave)
+![2_gtkwave](https://github.com/nutcakes/vsd-hdp/assets/154557310/855f07fe-6184-45c5-ade3-a07e847ef052)
 
 Then, we provide keypad_col=4'b1110 when keypad_row=4'b1110 to simulate pressing of button 1. Then we observe hex code 0x30 in 7 segment display corresponsing to digit 1.
 
-(print 3_gtkwave)
+![3_gtkwave](https://github.com/nutcakes/vsd-hdp/assets/154557310/42ce8525-d814-4a7e-be1c-6fc5ad550ffd)
 
 Then, we provide keypad_col=4'b1101 when keypad_row=4'b1110 to simulate pressing of button 2. Then we observe hex code 0x6D in 7 segment display corresponsing to digit 2.
 
-(print 4_gtkwave)
+![4_gtkwave](https://github.com/nutcakes/vsd-hdp/assets/154557310/96c3ff4e-bb92-4ac7-8aff-de5013933c52)
 
 Then, we provide keypad_col=4'b1101 when keypad_row=4'b1101 to simulate pressing of button 5. Then we observe hex code 0x5B in 7 segment display corresponsing to digit 5.
 
-(print 5_gtkwave)
+![5_gtkwave](https://github.com/nutcakes/vsd-hdp/assets/154557310/263d3565-eff5-4a78-bd6a-4de4601f8d9b)
 
 We press next button to make controller store each character in memory as shown below. Then, when we don't press any button to see that the controller keeps on scanning for button press and finds none as the keypad_col=4'b1111; Finally, we press * button to indicate null character but it will not be displayed in the 7 segment display. For this keypad_col=4'b1110 and keypad_row=4'b0111.
 
-(print 6_gtkwave)
+![6_gtkwave](https://github.com/nutcakes/vsd-hdp/assets/154557310/6c4adc18-dd78-4bce-9620-bb9dac362454)
 
 Then, we make input_display=0 to activate display mode. In this mode, the previously stored characters are displayed continuously with some delay indicated by delay pin. The characters 1,2 & 5 are displayed continuously as shown below. Mode led is used to indicate whether it is input_mode or display_mode. Mode led=1 when input mode, else it is 0.
 
-(print 7_gtkwave)
+![7_gtkwave](https://github.com/nutcakes/vsd-hdp/assets/154557310/f3a909ac-bf1d-4f36-8e30-d29f295881a4)
 
 </details>
 <details>
