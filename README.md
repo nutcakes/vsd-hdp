@@ -1902,5 +1902,7 @@ Then, we make input_display=0 to activate display mode. In this mode, the previo
 </details>
 <details>
  <summary> 4# Gate level synthesis & Simulation </summary>
-	
+> To verify the core is functioning properly we are going to take a closer look at the waveforms of the instructions simulated previously.
+
+ 
 </details>
