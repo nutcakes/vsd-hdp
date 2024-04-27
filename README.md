@@ -1,4 +1,4 @@
-# VSD-HDP
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/f6ea6a52-8997-4b15-8de6-c3959099bcfc)# VSD-HDP
 > A repository containing a detailed documentation of my progress in the [VSD-HDP](https://www.vlsisystemdesign.com/hdp/) program
 
 * VSD-HDP Status:
@@ -1902,7 +1902,22 @@ Then, we make input_display=0 to activate display mode. In this mode, the previo
 </details>
 <details>
  <summary> 4# Gate level synthesis & Simulation </summary>
-> To verify the core is functioning properly we are going to take a closer look at the waveforms of the instructions simulated previously.
+> GLS
+
+Using processor.v, from [here](https://github.com/bhargav-vlsi/RISCV-Display-controller), comment out the data & instruction memory modules ("sky130_sram") in processor.v and make sure writing_inst_done=0 for uart.
+
+Use following yosyscommands to synthesize gate level netlist with uart module for ASIC flow. I have kept the required lib & sram verilog files in lib folder. Since, I have more than 256 instructions, I use 2kb SRAM library files and verilog modules.
+
+bash```
+yosys> read_liberty -lib sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> read_verilog processor2.v
+yosys> synth -top wrapper
+yosys> dfflibmap -liberty sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> abc -liberty sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> write_verilog synth_processor_asic.v
+```
+
+![image](https://github.com/nutcakes/vsd-hdp/assets/154557310/79e48b0d-b418-4f8c-89b4-1e006d7cb733)
 
  
 </details>
